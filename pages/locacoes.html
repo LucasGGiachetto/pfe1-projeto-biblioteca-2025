@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/locacoes.css">
 </head>
 <body>
     <header class="main-header">
@@ -28,11 +29,26 @@
             </div>
         </div>
     </header>
+    <button onclick="cadastro.classList.remove('oculta')">cadastro</button>
     <footer class="main-footer">
         <center>
             <p>&copy; 2025 Lucas G. Giachetto</p>
         </center>
     </footer>
-    
+    <div id="cadastro" class="modal oculta">
+        <div class="janela">
+            <h2>Cadastro de locação de livro<button onclick="cadastro.classList.add('oculta')">X</button></h2>
+            <form>
+                <input type="text" name="livro" placeholder="Livro" required>
+                <input type="text" name="leitor" placeholder="Leitor" required>
+                <input type="number" name="cpf" placeholder="CPF" required>
+                <label for="retirada-data">Data de retirada:</label>
+                <input type="date" name="retirada" placeholder="Data de retirada" required>
+                <label for="devolucao-data">Data de devolução:</label>
+                <input type="date" name="devolução" placeholder="Previsão de devolução" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
