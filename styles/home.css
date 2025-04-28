@@ -1,0 +1,97 @@
+/* Container de Livros - Versão Aprimorada */
+#container-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.livro {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(94, 75, 138, 0.1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(94, 75, 138, 0.2);
+}
+
+.livro-capa {
+    height: 180px;
+    background-color: #E4C1F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5E4B8A;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.livro-conteudo {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.livro h3 {
+    color: #5E4B8A;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.livro p {
+    color: #555;
+    margin: 0.25rem 0;
+    line-height: 1.5;
+}
+
+.livro .autor {
+    color: #5E4B8A;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.livro .detalhes-btn {
+    background-color: #5E4B8A;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+}
+
+.livro .detalhes-btn:hover {
+    background-color: #A77BCA;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #container-livros {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 15px;
+    }
+    
+    .livro-capa {
+        height: 150px;
+    }
+}

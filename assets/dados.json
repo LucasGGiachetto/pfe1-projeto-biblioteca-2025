@@ -2,6 +2,7 @@
     {
       "id": 1,
       "titulo": "Dom Quixote",
+      "imagem": "",
       "autor": "Miguel de Cervantes",
       "ano": 1605,
       "editora": "Editora Clássicos",
@@ -11,6 +12,7 @@
     {
       "id": 2,
       "titulo": "1984",
+      "imagem": "",
       "autor": "George Orwell",
       "ano": 1949,
       "editora": "Companhia das Letras",
@@ -20,6 +22,7 @@
     {
       "id": 3,
       "titulo": "A Revolução dos Bichos",
+      "imagem": "",
       "autor": "George Orwell",
       "ano": 1945,
       "editora": "Editora B",
@@ -29,6 +32,7 @@
     {
       "id": 4,
       "titulo": "O Pequeno Príncipe",
+      "imagem": "",
       "autor": "Antoine de Saint-Exupéry",
       "ano": 1943,
       "editora": "Agir",
@@ -38,6 +42,7 @@
     {
       "id": 5,
       "titulo": "Orgulho e Preconceito",
+      "imagem": "",
       "autor": "Jane Austen",
       "ano": 1813,
       "editora": "Penguin",
