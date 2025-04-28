@@ -101,3 +101,51 @@
     --pt1: rgba(0, 0, 0, 0.3);
     --pt2: rgba(0, 0, 0, 0.7);
 }
+
+.tabela-locacoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tabela-locacoes th {
+    background-color: #5E4B8A;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-locacoes td {
+    padding: 10px;
+    border-bottom: 1px solid #E4C1F9;
+}
+
+.tabela-locacoes tr:nth-child(even) {
+    background-color: #F9F5FF;
+}
+
+.tabela-locacoes tr:hover {
+    background-color: #F2E6FF;
+}
+
+.btn-devolver {
+    background-color: #A77BCA;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-devolver:hover {
+    background-color: #5E4B8A;
+}
+
+/* Ajuste para os labels no formulário */
+#cadastro label {
+    display: block;
+    margin-top: 10px;
+    color: #5E4B8A;
+    font-weight: 500;
+}
